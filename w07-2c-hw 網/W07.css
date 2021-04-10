@@ -1,0 +1,125 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1.5fr 2fr 0.5fr;
+  grid-template-areas:
+    "logo header"
+    "article aside"
+    "footer footer";
+  font-size:0.8rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo {
+  background-color:pink;
+  grid-area: logo;
+  border-width: 10px 5px 10px 10px;
+  border-style: solid;
+  border-color: rgb(24, 133, 170);
+}
+
+header {
+  background-color: blanchedalmond;
+  grid-area:  header;
+  border-width: 10px 10px 10px 5px;
+  border-style: solid;
+  border-color: rgb(24, 133, 170);
+}
+
+
+article {
+  background-color:purple ;
+  grid-area: article;
+  border-width: 10px 5px 10px 10px;
+  border-style: solid;
+  border-color: green;
+  padding: 20px;
+}
+
+article nav {
+  background-color:lightskyblue ;
+  grid-area: article;
+  height: 95%;
+}
+
+aside {
+  background-color: yellow;
+  grid-area: aside;
+  border-width: 10px 10px 10px 5px;
+  border-style: solid;
+  border-color: green;
+  padding: 20px;
+}
+
+section {
+  background-color: cadetblue;
+  grid-area: aside;
+  
+  height: 95%;
+  
+}
+
+.display {
+  background-color:bisque ;
+  grid-area: aside;
+  margin: 10px 100px 10px 100px ;
+  height: 60%;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0.3rem;
+}
+
+li img {
+  margin: 1rem;
+  width: 70%;
+  height: 90%;
+}
+
+.picture {
+  background-color:palevioletred ;
+  grid-area: aside;
+  margin:15px 60px 15px 60px;
+  height: 26%; 
+}
+
+footer {
+  background-color:chocolate ;
+  grid-area: footer;
+}
+
+@media only screen and (max-width:550px)  {
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2fr 4fr 0.2fr;
+    grid-template-areas: 
+      "logo"
+      "header"
+      "article"
+      "aside"
+      "footer";
+  }
+}
+
+
+
+
+
+
+
+
