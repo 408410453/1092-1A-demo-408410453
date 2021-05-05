@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+table, td{
+    border:1px solid black;
+}
+
+#myphoto{
+    padding: 10px;
+}
+
+.pink {
+    background-color: pink;
+    text-align: center;
+}
+
+.blue {
+    background-color: powderblue;
+    text-align: center;
+}
